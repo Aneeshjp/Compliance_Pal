@@ -1,0 +1,45 @@
+# ===== SECRETS — NEVER COMMIT =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+backend/venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.Python
+
+# ===== Node / Next.js =====
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/*.tsbuildinfo
+
+# ===== User Uploads (invoice files — private data) =====
+backend/uploads/*
+backend/demo_documents/*
+demo_uploads/*
+!backend/uploads/.gitkeep
+!backend/demo_documents/.gitkeep
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.suo
+*.user
